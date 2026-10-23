@@ -2,7 +2,7 @@
 
 Параллельная реализация поиска точек множества Мандельброта на языке C с использованием POSIX-потоков (`pthreads`) и визуализация множества.
 
-## 📋 Содержание
+## Содержание
 
 - [Описание задачи](#описание-задачи)
 - [Алгоритм](#алгоритм)
@@ -33,26 +33,42 @@
 ## Сборка
 
 **Windows (cmd.exe):**
+```
 cmd
 gcc -O3 -pthread -o mandelbrot.exe src\mandelbrot.c -lm
 gcc -O3 -pthread -o render.exe src\render.c -lm
+```
 
 ## Запуск
 
 Запуск основной программы:
-mandelbrot.exe <nthreads> <npoints>
+```mandelbrot.exe <nthreads> <npoints>```
 Пример:
-mandelbrot.exe 4 10000
+```mandelbrot.exe 4 10000```
 
 Визуализация:
-render.exe [nthreads] [output.bmp] [max_iter]
+```render.exe [nthreads] [output.bmp] [max_iter]```
 Пример:
-render.exe 4 mandelbrot.bmp 1000
+```render.exe 4 mandelbrot.bmp 1000```
+
+![Mandelbrot](mandelbrot.bmp)
 
 Замеры производительности (Windows):
-scripts\benchmark.bat 10000 10
+```benchmark.bat 10000 10```
 
 ## Результаты
+
+**Аппаратная конфигурация:**
+
+| Параметр | Значение |
+|---|---|
+| CPU | _[Intel Core i9-12900H, 14 ядер / 20 потоков, 2.5 ГГц]_
+| RAM | _[16 ГБ]_
+| ОС  | _[Windows 11]_
+| Компилятор | GCC 13.1.0 |
+| Флаги компиляции | `-O3 -pthread` |
+
+Параметры эксперимента: `npoints = 10000`, 10 запусков на конфигурацию.
 
 | Потоки | Мин (с) | Среднее (с) | Макс (с) | Ускорение | Эффективность |
 |:---:|:---:|:---:|:---:|:---:|:---:|
