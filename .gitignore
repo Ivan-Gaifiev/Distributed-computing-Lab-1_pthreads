@@ -1,0 +1,12 @@
+# Local configuration and credentials
+.env
+.env.*
+!.env.example
+*.local
+*.local.*
+.venv/
+venv/
+.idea/
+.vscode/
+.codex/
+data/

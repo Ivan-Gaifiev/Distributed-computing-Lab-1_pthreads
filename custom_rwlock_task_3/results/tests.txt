@@ -1,0 +1,7 @@
+PASS sequential list and invariant checker
+PASS overlapping readers, last-reader wait, writer priority, wakeups
+PASS custom concurrent exclusion, stable reads, list operations
+PASS pthread concurrent exclusion, stable reads, list operations
+All C tests passed.
+PASS CLI: both backends, remainder, empty ranges, workloads, 19 invalid inputs
+PASS partial pthread_create failure: waiting workers aborted and joined

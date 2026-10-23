@@ -1,0 +1,10 @@
+*.exe
+*.o
+rwlock_bench
+test_rwlock
+test_create_failure
+__pycache__/
+
+# Machine details, installation paths and local measurement archives
+**/metadata.json
+/results-????-??-??/
