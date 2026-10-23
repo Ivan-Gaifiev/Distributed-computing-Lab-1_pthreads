@@ -80,8 +80,8 @@ python run_benchmarks.py --output results-repeat
 Нужен Matplotlib. Из корня репозитория:
 
 ```sh
-python -m pip install -r lab3/visualization/requirements.txt
-python lab3/visualization/plot_results.py
+python -m pip install -r custom_rwlock_task_3/visualization/requirements.txt
+python custom_rwlock_task_3/visualization/plot_results.py
 ```
 
 PNG сохраняются в `visualization/figures/` и вставляются в отчёт.
