@@ -1,4 +1,5 @@
 # Distributed computing Lab-1
+Команда: Дмитрий Цирулёв, Иван Гайфиев, Юрий Магус
 
 ## Множество Мандельброта
 + [README](./mandelbrot_task_1/README.md)
